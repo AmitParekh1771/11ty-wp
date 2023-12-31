@@ -46,7 +46,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addCollection("featuredPosts", (collectionApi) => {
-        return collectionApi.getFilteredByTag("posts").slice(0, -4).reverse();
+        return collectionApi.getFilteredByTag("posts").slice(0, 4);
     });
 
     return {
