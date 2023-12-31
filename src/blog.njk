@@ -1,0 +1,23 @@
+---
+layout: default.njk
+title: Blog - The Fastest Blog
+pagination:
+  data: collections.posts
+  size: 4
+  alias: posts
+  reverse: true
+---
+{% from "partials/card.njk" import card %}
+<section class="px-5">
+    <div class="max-w-screen-sm mx-auto text-center py-10">
+        <h1 class="text-4xl font-bold">Blog</h1>
+    </div>
+</section>
+<section class="px-5">
+    <div class="max-w-screen-sm mx-auto py-10">
+        {% for post in posts %}
+            {{ card(post) }}
+        {% endfor %}
+        {% include "partials/pagination.njk" %}
+    </div>
+</section>

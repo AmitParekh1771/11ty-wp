@@ -1,0 +1,8 @@
+{
+    "type": "article",
+    "tags": "posts",
+    "layout": "post.njk",
+    "eleventyComputed": {
+        "permalink": "/blog/{{ slug }}/"
+    }
+}

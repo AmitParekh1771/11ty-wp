@@ -1,0 +1,16 @@
+---
+layout: default.njk
+---
+{% from "partials/card.njk" import card %}
+<section class="px-5">
+    <div class="max-w-screen-sm mx-auto text-center py-10">
+        <h1 class="text-4xl font-bold">Welcome to the fastest blog in the world</h1>
+    </div>
+</section>
+<section class="px-5">
+    <div class="max-w-screen-sm mx-auto py-10">
+        {% for post in collections.featuredPosts %}
+            {{ card(post) }}
+        {% endfor %}
+    </div>
+</section>

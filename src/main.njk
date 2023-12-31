@@ -1,0 +1,4 @@
+---
+permalink: main.js
+---
+{% set js %}{% include "scripts/index.js" %}{% endset %}{{ js | jsmin | safe }}

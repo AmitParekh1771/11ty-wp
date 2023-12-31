@@ -1,0 +1,4 @@
+---
+permalink: styles.css
+---
+{% set css %}{% include "styles/index.css" %}{% endset %}{{ css | postcss | safe }}
