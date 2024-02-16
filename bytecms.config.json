@@ -1,0 +1,12 @@
+{
+    "source": "src",
+    "data": {
+        "path": "_data"
+    },
+    "assets": {
+        "path": "assets"
+    },
+    "posts": {
+        "path": "posts"
+    }
+}
